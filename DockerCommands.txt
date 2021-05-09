@@ -1,0 +1,26 @@
+// Enters the mysql database and executes mysql
+docker exec -it c88af10a34fd mysql -uroot -ppassword
+
+// Shows a list of containers running
+docker ps
+
+// Shows list of images running
+docker images
+
+// Stops a container
+docker stop [CONTAINER ID]
+
+// Removes a stopped container
+docker rm [CONTAINTER ID]
+
+// Removes an image
+docker image rm [IMAGE ID]
+
+// Builds the containers and images
+docker-compose up -d
+
+// Runs the server
+curl localhost:[PORT NUMBER]
+
+//Open database
+docker exec -it speech-assistant-analyzer_db_1 mysql -uroot -p
